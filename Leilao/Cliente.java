@@ -96,6 +96,7 @@ class Cliente {
             int lancesPorCliente = 50;
             List<Thread> threads = new ArrayList<>();
 
+            //======================== THREADS SENDO CRIADAS AQUI =======================================
 
             for (int i = 0; i < numClientes; i++) {
                 // Cada thread foca em um produto diferente (usando operador módulo)
@@ -140,6 +141,9 @@ class Cliente {
 
 
             //============== Teste de concorrência com múltiplas threads ==============
+
+
+            // AQUI APENAS DETERMINAMOS O COMPORTAMENTO DA THREAD , POIS ELAS FORAM INICIADAS NO MAIN 
 
 
 static class LanceTask implements Runnable { 
